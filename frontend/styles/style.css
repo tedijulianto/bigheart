@@ -1,0 +1,608 @@
+.location {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.located {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+.address-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-title h3 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.address-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.address-details p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.located.active .address-details {
+  max-height: 300px;
+}
+
+.located.active i {
+  transform: rotate(180deg);
+}
+
+i {
+  transition: transform 0.5s ease-in;
+}
+
+@media screen and (max-width: 320px) {
+  .card-img-overlay-left {
+    left: 0;
+    top: 350px;
+  }
+
+  .font-56 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  #hero {
+    min-height: 100vh;
+    /* margin-bottom: -200px; */
+  }
+
+  #hero h5 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #story {
+    margin-top: -245px;
+    margin-bottom: 50px;
+  }
+
+  /* #story h1,
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+  } */
+
+  #mission h1 {
+    font-size: 2rem;
+  }
+
+  #mission h5 {
+    font-size: 1.25rem;
+  }
+
+  #mission p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #mission h1,
+  h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .box1,
+  .box2 {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  #community {
+    margin-bottom: 20px;
+  }
+
+  #trusted {
+    margin-bottom: 285px;
+  }
+
+  #trusted .card-img-custom {
+    height: 500px;
+  }
+
+  #charity {
+    margin-bottom: 300px;
+  }
+
+  #charity h1 {
+    margin-top: 25px;
+  }
+
+  .card-img-overlay-minleft-20 {
+    left: 0;
+  }
+
+  .border-right-red20 {
+    border-right: 15px solid #ac1f40;
+  }
+
+  .card-focus::before {
+    width: 100%;
+  }
+
+  .card-focus::after {
+    width: 40%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 399.98px) {
+  .card-img-overlay-left {
+    left: 0;
+    top: 350px;
+  }
+
+  .font-56 {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  #hero {
+    min-height: 100vh;
+    /* margin-bottom: -200px; */
+  }
+
+  #hero h5 {
+    text-align: center;
+  }
+
+  #story {
+    margin-top: -150px;
+    margin-bottom: 50px;
+  }
+
+  /* #story h1,
+  h3 {
+    text-align: center;
+  } */
+
+  #mission h1,
+  h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #mission p {
+    text-align: center;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .box1,
+  .box2 {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  #community {
+    margin-bottom: 80px;
+  }
+
+  #trusted {
+    margin-bottom: 90px;
+  }
+
+  #trusted .card-img-custom {
+    height: 500px;
+  }
+
+  #charity {
+    margin-bottom: 100px;
+  }
+
+  #charity h1 {
+    margin-top: 25px;
+  }
+
+  .card-img-overlay-minleft-20 {
+    left: 0;
+  }
+
+  .border-right-red20 {
+    border-right: 15px solid #ac1f40;
+  }
+
+  #charity .card-focus::before {
+    width: 100%;
+  }
+
+  #charity .card-focus::after {
+    width: 40%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 575.98px) {
+  .card-img-overlay-left {
+    left: 0;
+    top: 420px;
+  }
+
+  .font-56 {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+
+  #hero {
+    min-height: 100vh;
+    /* margin-bottom: -200px; */
+  }
+
+  #hero h5 {
+    text-align: center;
+  }
+
+  #story {
+    margin-top: -160px;
+    margin-bottom: 50px;
+  }
+
+  #story h3 {
+    font-size: 2.25rem;
+  }
+
+  #story p {
+    font-size: 1rem;
+  }
+
+  /* #story h1,
+  h3 {
+    text-align: center;
+  } */
+
+  #story img {
+    height: 115px;
+  }
+
+  #mission h5 {
+    font-size: 1.5rem;
+  }
+
+  #mission p {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  #mission h1,
+  h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .box1,
+  .box2 {
+    width: 70%;
+    height: auto;
+    position: relative;
+  }
+
+  #community {
+    margin-bottom: 100px;
+  }
+
+  #trusted {
+    margin-bottom: 100px;
+  }
+
+  #trusted .card-img-custom {
+    height: 500px;
+  }
+
+  #charity {
+    margin-bottom: 100px;
+  }
+
+  #charity h1 {
+    margin-top: 25px;
+  }
+
+  .card-img-overlay-minleft-20 {
+    left: 0;
+  }
+
+  .border-right-red20 {
+    border-right: 15px solid #ac1f40;
+  }
+
+  #charity .card-focus::before {
+    width: 100%;
+  }
+
+  #charity .card-focus::after {
+    width: 50%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .card-img-overlay-left {
+    left: 2%;
+    top: 200px;
+  }
+
+  .font-56 {
+    font-size: 2rem !important;
+  }
+
+  #hero h5 {
+    font-size: 0.9rem;
+  }
+
+  #hero .line-height-30 {
+    line-height: 23px !important;
+  }
+
+  #story p {
+    font-size: 15px;
+  }
+
+  #story img {
+    height: 115px;
+  }
+
+  .box1,
+  .box2 {
+    width: 70%;
+    height: auto;
+    position: relative;
+  }
+
+  #trusted {
+    margin-top: 70px;
+  }
+
+  #trusted .card-img-custom {
+    width: auto;
+    height: 400px;
+  }
+
+  #charity {
+    margin-top: 375px;
+  }
+
+  #charity .img-modal {
+    width: 75%;
+    height: 330px;
+  }
+
+  #charity .card-img-overlay-minleft-20 {
+    left: 2%;
+    top: -165px;
+  }
+
+  #charity h1 {
+    margin-top: 20px;
+  }
+
+  .border-right-red20 {
+    border-right: 16px solid #ac1f40;
+  }
+
+  .card-focus::before {
+    content: "";
+    width: 50%;
+  }
+
+  .card-focus::after {
+    width: 50%;
+  }
+
+  #address {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .card-img-overlay-left {
+    left: 2%;
+    top: 250px;
+  }
+
+  .font-56 {
+    font-size: 2.75rem !important;
+  }
+
+  #story p {
+    font-size: 15px;
+  }
+
+  #story img {
+    height: 115px;
+  }
+
+  .img-mission {
+    width: 300px;
+    height: 300px;
+  }
+
+  .box {
+    width: auto;
+    gap: 20px;
+  }
+
+  .box1,
+  .box2 {
+    width: 200px;
+    height: 200px;
+    font-size: 0.5rem;
+    position: relative;
+  }
+
+  #trusted {
+    margin-top: 70px;
+  }
+
+  #trusted .card-img-custom {
+    width: auto;
+    height: 400px;
+  }
+
+  #charity {
+    margin-top: 75px;
+  }
+
+  #charity .img-modal {
+    width: 75%;
+    height: 330px;
+  }
+
+  #charity .card-img-overlay-minleft-20 {
+    left: 40%;
+    top: -165px;
+  }
+
+  #charity h1 {
+    margin-top: 33px;
+  }
+
+  .border-right-red20 {
+    border-right: 16px solid #ac1f40;
+  }
+
+  .card-focus::before {
+    content: "";
+    width: 50%;
+  }
+
+  .card-focus::after {
+    width: 50%;
+  }
+
+  #address {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .card-img-overlay-left {
+    left: 10%;
+    top: 55%;
+  }
+
+  .font-56 {
+    font-size: 56px !important;
+  }
+
+  #story img {
+    height: 115px;
+  }
+
+  .box {
+    gap: 20px;
+  }
+
+  .box1,
+  .box2 {
+    width: 170px;
+    height: 170px;
+    font-size: 0.5rem;
+    position: relative;
+  }
+
+  #trusted {
+    margin-top: 90px;
+  }
+
+  .card-img-custom {
+    width: auto;
+    height: 400px;
+  }
+
+  #charity {
+    margin-top: 100px;
+  }
+
+  #charity h1 {
+    margin: 10px 0;
+  }
+
+  .img-modal {
+    height: 400px;
+  }
+
+  .card-img-overlay-minleft-20 {
+    left: -40%;
+  }
+
+  .card-focus::before {
+    width: 50%;
+  }
+
+  .card-focus::after {
+    width: 50%;
+  }
+
+  #address {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #story img {
+    height: 115px;
+  }
+
+  .box {
+    gap: 20px;
+  }
+
+  #charity {
+    margin-top: 100px;
+  }
+
+  #charity h1 {
+    margin: 15px 0;
+  }
+
+  .box1,
+  .box2 {
+    width: 180px;
+    height: 180px;
+    font-size: 0.5rem;
+    position: relative;
+  }
+
+  #address {
+    margin-top: 100px;
+  }
+}
