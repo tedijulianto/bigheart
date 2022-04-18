@@ -22,7 +22,7 @@
 
 .address-title h3 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .address-details {
@@ -34,7 +34,7 @@
 .address-details p {
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   color: white;
 }
 
@@ -151,6 +151,13 @@ i {
     width: 40%;
     position: absolute;
   }
+
+  .address-title h3 {
+    font-size: 1rem;
+  }
+  .address-details p {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 399.98px) {
@@ -242,6 +249,13 @@ i {
   #charity .card-focus::after {
     width: 40%;
     position: absolute;
+  }
+
+  .address-title h3 {
+    font-size: 1.25rem;
+  }
+  .address-details p {
+    font-size: 1rem;
   }
 }
 
@@ -352,6 +366,13 @@ i {
     width: 50%;
     position: absolute;
   }
+
+  .address-title h3 {
+    font-size: 1.25rem;
+  }
+  .address-details p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -382,8 +403,8 @@ i {
 
   .box1,
   .box2 {
-    width: 70%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     position: relative;
   }
 
@@ -430,16 +451,27 @@ i {
   #address {
     margin-top: 70px;
   }
+
+  .address-title h3 {
+    font-size: 1.25rem;
+  }
+  .address-details p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .card-img-overlay-left {
     left: 2%;
-    top: 250px;
+    top: 215px;
   }
 
   .font-56 {
-    font-size: 2.75rem !important;
+    font-size: 2rem !important;
+  }
+
+  #hero h5 {
+    font-size: 1rem;
   }
 
   #story p {
@@ -511,6 +543,13 @@ i {
   #address {
     margin-top: 70px;
   }
+
+  .address-title h3 {
+    font-size: 1.25rem;
+  }
+  .address-details p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -575,6 +614,13 @@ i {
   #address {
     margin-top: 100px;
   }
+
+  .address-title h3 {
+    font-size: 1.5rem;
+  }
+  .address-details p {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -591,7 +637,34 @@ i {
   }
 
   #charity h1 {
-    margin: 15px 0;
+    font-size: 3.25rem;
+  }
+
+  #charity p {
+    font-size: 1.5rem;
+  }
+
+  .img-modal {
+    width: 100%;
+    height: 500px;
+  }
+
+  .btn-charity {
+    height: 60px;
+    width: 250px;
+  }
+
+  .card-img-overlay-minleft-20 {
+    position: absolute;
+    left: -50%;
+  }
+
+  .card-focus::before {
+    width: 35%;
+  }
+
+  .card-focus::after {
+    width: 35%;
   }
 
   .box1,
