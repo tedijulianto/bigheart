@@ -7,6 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f8f9fb;
 }
 
 * {
@@ -17,6 +18,16 @@ body {
 
 .caveat {
   font-family: "Caveat", cursive !important;
+}
+
+.mapIcon {
+  position: absolute;
+  transition: fill 400ms ease-in-out 0s;
+  fill: rgb(255, 255, 255);
+  width: 130px;
+  top: 20%;
+  left: 25%;
+  transform: translate(-50%, -50%);
 }
 
 .overlay {

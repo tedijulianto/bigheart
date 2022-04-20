@@ -55,6 +55,13 @@ i {
   transition: transform 0.5s ease-in;
 }
 
+/* ============================ Section Base Color ============================ */
+#story,
+#mission,
+#trusted {
+  background-color: rgb(255, 255, 255);
+}
+
 /* ============================ Wave Styling ============================ */
 .wave {
   display: block;
@@ -68,17 +75,22 @@ i {
   overflow: hidden;
 }
 
-.waveStory {
+.waveLine {
   stroke: rgb(229, 233, 240);
   fill: none;
   transition: fill 400ms ease-in-out 0s;
 }
 
-/* .waveMission {
-  fill: rgb(251, 251, 252);
+.waveMission,
+.waveTrusted {
+  fill: rgb(248, 249, 251);
   transition: fill 400ms ease-in-out 0s;
-  margin-top: 50px;
-} */
+}
+
+.waveCommunity {
+  fill: rgb(255, 255, 255);
+  transition: fill 400ms ease-in-out 0s;
+}
 
 /* .waveFooter1 {
   transition: fill 400ms ease-in-out 0s;
@@ -194,8 +206,15 @@ i {
   .address-title h3 {
     font-size: 1rem;
   }
+
   .address-details p {
     font-size: 0.8rem;
+  }
+
+  .mapIcon {
+    width: 100px;
+    top: 10%;
+    left: 75%;
   }
 }
 
@@ -275,8 +294,15 @@ i {
   .address-title h3 {
     font-size: 1.25rem;
   }
+
   .address-details p {
     font-size: 1rem;
+  }
+
+  .mapIcon {
+    width: 100px;
+    top: 10%;
+    left: 75%;
   }
 }
 
@@ -376,6 +402,16 @@ i {
   .address-details p {
     font-size: 1rem;
   }
+
+  #address h1 {
+    margin-left: 120px;
+  }
+
+  .mapIcon {
+    width: 100px;
+    top: 8%;
+    left: 50%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -461,6 +497,12 @@ i {
   }
   .address-details p {
     font-size: 1rem;
+  }
+
+  .mapIcon {
+    width: 130px;
+    top: 8%;
+    left: 50%;
   }
 }
 
@@ -550,6 +592,12 @@ i {
   .address-details p {
     font-size: 1rem;
   }
+
+  .mapIcon {
+    width: 130px;
+    top: 8%;
+    left: 50%;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -610,6 +658,7 @@ i {
   .address-title h3 {
     font-size: 1.5rem;
   }
+
   .address-details p {
     font-size: 1.25rem;
   }

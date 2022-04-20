@@ -26,10 +26,10 @@ window.onscroll = function () {
   }
 };
 
-const loc = document.querySelectorAll(".located");
+// const loc = document.querySelectorAll(".located");
 
-loc.forEach((located) => {
-  located.addEventListener("click", () => {
-    located.classList.toggle("active");
-  });
-});
+// loc.forEach((located) => {
+//   located.addEventListener("click", () => {
+//     located.classList.toggle("active");
+//   });
+// });
