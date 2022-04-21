@@ -21,13 +21,30 @@ body {
 }
 
 .mapIcon {
-  position: absolute;
+  position: relative;
   transition: fill 400ms ease-in-out 0s;
   fill: rgb(255, 255, 255);
-  width: 130px;
-  top: 20%;
-  left: 25%;
+  width: 100px;
+  /* top: 50%; */
+  left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.charityDonation {
+  position: absolute;
+  width: 90px;
+  top: -15px;
+  left: 86%;
+  transform: translate(-50%, -50%);
+}
+
+.handShake {
+  position: absolute;
+  width: 150px;
+  top: -30px;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  fill: rgba(77, 87, 106, 0.3);
 }
 
 .overlay {
