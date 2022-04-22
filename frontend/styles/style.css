@@ -56,10 +56,11 @@ i {
 }
 
 /* ============================ Section Base Color ============================ */
-#story,
-#mission,
-#trusted {
-  background-color: rgb(255, 255, 255);
+#roadmap,
+#community,
+#charity,
+#address {
+  background-color: rgb(248, 249, 251);
 }
 
 /* ============================ Wave Styling ============================ */
@@ -77,6 +78,12 @@ i {
 
 .waveLine {
   stroke: rgb(229, 233, 240);
+  fill: none;
+  transition: fill 400ms ease-in-out 0s;
+}
+
+.waveLineRed {
+  stroke: rgb(172, 31, 64);
   fill: none;
   transition: fill 400ms ease-in-out 0s;
 }
@@ -178,6 +185,10 @@ i {
     display: none;
   }
 
+  .giftCoin {
+    display: none;
+  }
+
   #charity {
     margin-top: 220px;
   }
@@ -220,7 +231,7 @@ i {
   }
 
   .mapIcon {
-    left: 75%;
+    display: none;
   }
 }
 
@@ -280,6 +291,10 @@ i {
     display: none;
   }
 
+  .giftCoin {
+    display: none;
+  }
+
   #charity h1 {
     margin-top: 25px;
   }
@@ -316,7 +331,7 @@ i {
   }
 
   .mapIcon {
-    left: 75%;
+    display: none;
   }
 }
 
@@ -395,6 +410,10 @@ i {
     left: 25%;
   }
 
+  .giftCoin {
+    display: none;
+  }
+
   #charity h1 {
     margin-top: 25px;
   }
@@ -430,7 +449,7 @@ i {
   }
 
   .mapIcon {
-    left: 50%;
+    display: none;
   }
 }
 
@@ -483,6 +502,10 @@ i {
     left: 20%;
   }
 
+  .giftCoin {
+    display: none;
+  }
+
   #charity {
     margin-top: 315px;
   }
@@ -520,10 +543,6 @@ i {
     left: 90%;
   }
 
-  #address {
-    margin-top: 70px;
-  }
-
   .address-title h3 {
     font-size: 1.25rem;
   }
@@ -532,9 +551,7 @@ i {
   }
 
   .mapIcon {
-    width: 130px;
-    top: 8%;
-    left: 50%;
+    display: none;
   }
 }
 
@@ -593,6 +610,12 @@ i {
     left: 20%;
   }
 
+  .giftCoin {
+    width: 100px;
+    top: 5%;
+    left: 90%;
+  }
+
   #charity .img-modal {
     width: 55%;
     height: 330px;
@@ -625,10 +648,6 @@ i {
     left: 92%;
   }
 
-  #address {
-    margin-top: 70px;
-  }
-
   .address-title h3 {
     font-size: 1.25rem;
   }
@@ -637,9 +656,7 @@ i {
   }
 
   .mapIcon {
-    width: 130px;
-    top: 8%;
-    left: 50%;
+    display: none;
   }
 }
 
@@ -680,6 +697,12 @@ i {
     left: 20%;
   }
 
+  .giftCoin {
+    width: 100px;
+    top: 0;
+    left: 92%;
+  }
+
   #charity h1 {
     margin: 10px 0;
   }
@@ -706,16 +729,16 @@ i {
     left: 85%;
   }
 
-  #address {
-    margin-top: 70px;
-  }
-
   .address-title h3 {
     font-size: 1.5rem;
   }
 
   .address-details p {
     font-size: 1.25rem;
+  }
+
+  .mapIcon {
+    display: none;
   }
 }
 
@@ -726,6 +749,12 @@ i {
 
   .box {
     gap: 20px;
+  }
+
+  .giftCoin {
+    width: 100px;
+    top: 0;
+    left: 92%;
   }
 
   #charity h1 {
@@ -767,7 +796,31 @@ i {
     position: relative;
   }
 
-  #address {
-    margin-top: 78px;
+  .mapIcon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .giftCoin {
+    width: 100px;
+    top: 38%;
+    left: 92%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .giftCoin {
+    width: 150px;
+    top: 35%;
+    left: 91%;
+  }
+
+  #address h1 {
+    font-size: 2.2rem;
+  }
+
+  .mapIcon {
+    display: block;
   }
 }

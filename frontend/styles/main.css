@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f8f9fb;
+  /* background-color: #f8f9fb; */
 }
 
 * {
@@ -21,13 +21,15 @@ body {
 }
 
 .mapIcon {
-  position: relative;
+  /* position: relative; */
   transition: fill 400ms ease-in-out 0s;
   fill: rgb(255, 255, 255);
-  width: 100px;
+  width: 90px;
+  margin-right: 10px;
+  float: left;
   /* top: 50%; */
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .charityDonation {
@@ -43,6 +45,15 @@ body {
   width: 150px;
   top: -30px;
   left: 20%;
+  transform: translate(-50%, -50%);
+  fill: rgba(77, 87, 106, 0.3);
+}
+
+.giftCoin {
+  position: absolute;
+  width: 150px;
+  top: 35%;
+  left: 88%;
   transform: translate(-50%, -50%);
   fill: rgba(77, 87, 106, 0.3);
 }
