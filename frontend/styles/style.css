@@ -3,6 +3,25 @@
 }
 
 /* ============================ Address Section ============================ */
+.card-glass {
+  box-shadow: 0px 0px 20px 1px rgba(40, 255, 240, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.card-community {
+  border-radius: 10px;
+}
+
+.card-community:hover {
+  box-shadow: 0px 0px 20px 1px rgba(172, 31, 64, 0.75);
+}
+
 .location {
   width: 100%;
   margin: 0 auto;
@@ -13,9 +32,9 @@
 
 .located {
   max-width: 700px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   cursor: pointer;
 }
 
@@ -26,8 +45,8 @@
 }
 
 .address-title h3 {
-  color: white;
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 1.15rem;
 }
 
 .address-details {
@@ -39,8 +58,8 @@
 .address-details p {
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 1.25rem;
-  color: white;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .located.active .address-details {
@@ -323,11 +342,11 @@ i {
   }
 
   .address-title h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .address-details p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .mapIcon {
@@ -405,9 +424,7 @@ i {
   }
 
   .handShake {
-    width: 100px;
-    top: 18px;
-    left: 25%;
+    display: none;
   }
 
   .giftCoin {
@@ -439,13 +456,6 @@ i {
     width: 70px;
     top: 15px;
     left: 84%;
-  }
-
-  .address-title h3 {
-    font-size: 1.25rem;
-  }
-  .address-details p {
-    font-size: 1rem;
   }
 
   .mapIcon {
@@ -497,9 +507,7 @@ i {
   }
 
   .handShake {
-    width: 100px;
-    top: 10px;
-    left: 20%;
+    display: none;
   }
 
   .giftCoin {
@@ -541,13 +549,6 @@ i {
     width: 80px;
     top: -215%;
     left: 90%;
-  }
-
-  .address-title h3 {
-    font-size: 1.25rem;
-  }
-  .address-details p {
-    font-size: 1rem;
   }
 
   .mapIcon {
@@ -611,8 +612,8 @@ i {
   }
 
   .giftCoin {
-    width: 100px;
-    top: 5%;
+    width: 85px;
+    top: 3%;
     left: 90%;
   }
 
@@ -646,13 +647,6 @@ i {
     width: 80px;
     top: 15px;
     left: 92%;
-  }
-
-  .address-title h3 {
-    font-size: 1.25rem;
-  }
-  .address-details p {
-    font-size: 1rem;
   }
 
   .mapIcon {
@@ -698,8 +692,8 @@ i {
   }
 
   .giftCoin {
-    width: 100px;
-    top: 0;
+    width: 85px;
+    top: 5px;
     left: 92%;
   }
 
@@ -727,14 +721,6 @@ i {
     width: 90px;
     top: -10px;
     left: 85%;
-  }
-
-  .address-title h3 {
-    font-size: 1.5rem;
-  }
-
-  .address-details p {
-    font-size: 1.25rem;
   }
 
   .mapIcon {
@@ -811,7 +797,7 @@ i {
 
 @media screen and (min-width: 1440px) {
   .giftCoin {
-    width: 150px;
+    width: 110px;
     top: 35%;
     left: 91%;
   }

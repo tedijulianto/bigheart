@@ -51,7 +51,6 @@ body {
 
 .giftCoin {
   position: absolute;
-  width: 150px;
   top: 35%;
   left: 88%;
   transform: translate(-50%, -50%);
