@@ -201,6 +201,10 @@ i {
     margin-bottom: 20px;
   } */
 
+  .chartMissionBox {
+    height: 260px;
+  }
+
   #trusted .card-img-custom {
     height: 500px;
   }
@@ -262,6 +266,38 @@ i {
   .mapIcon {
     display: none;
   }
+
+  .dottedY1 {
+    display: none;
+  }
+
+  .dottedY2 {
+    display: none;
+  }
+
+  .dottedX1 {
+    display: none;
+  }
+
+  .dottedX2 {
+    display: none;
+  }
+
+  .dotY1 {
+    display: none;
+  }
+
+  .dotY2 {
+    display: none;
+  }
+
+  .dotX1 {
+    display: none;
+  }
+
+  .dotX2 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 399.98px) {
@@ -296,6 +332,10 @@ i {
 
   #mission p {
     text-align: center;
+  }
+
+  .chartMissionBox {
+    height: 320px;
   }
 
   .box {
@@ -371,6 +411,38 @@ i {
   }
 
   .mapIcon {
+    display: none;
+  }
+
+  .dottedY1 {
+    display: none;
+  }
+
+  .dottedY2 {
+    display: none;
+  }
+
+  .dottedX1 {
+    display: none;
+  }
+
+  .dottedX2 {
+    display: none;
+  }
+
+  .dotY1 {
+    display: none;
+  }
+
+  .dotY2 {
+    display: none;
+  }
+
+  .dotX1 {
+    display: none;
+  }
+
+  .dotX2 {
     display: none;
   }
 }
@@ -492,7 +564,43 @@ i {
     left: 84%;
   }
 
+  .chartMissionBox {
+    height: 375px;
+  }
+
   .mapIcon {
+    display: none;
+  }
+
+  .dottedY1 {
+    display: none;
+  }
+
+  .dottedY2 {
+    display: none;
+  }
+
+  .dottedX1 {
+    display: none;
+  }
+
+  .dottedX2 {
+    display: none;
+  }
+
+  .dotY1 {
+    display: none;
+  }
+
+  .dotY2 {
+    display: none;
+  }
+
+  .dotX1 {
+    display: none;
+  }
+
+  .dotX2 {
     display: none;
   }
 }
@@ -602,6 +710,38 @@ i {
   }
 
   .mapIcon {
+    display: none;
+  }
+
+  .dottedY1 {
+    display: none;
+  }
+
+  .dottedY2 {
+    display: none;
+  }
+
+  .dottedX1 {
+    display: none;
+  }
+
+  .dottedX2 {
+    display: none;
+  }
+
+  .dotY1 {
+    display: none;
+  }
+
+  .dotY2 {
+    display: none;
+  }
+
+  .dotX1 {
+    display: none;
+  }
+
+  .dotX2 {
     display: none;
   }
 }

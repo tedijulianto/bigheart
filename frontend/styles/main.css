@@ -20,6 +20,62 @@ body {
   font-family: "Caveat", cursive !important;
 }
 
+.dottedY1 {
+  position: absolute;
+  top: 19%;
+  left: -7%;
+  transform: translate(-50%, -50%);
+}
+
+.dottedY2 {
+  position: absolute;
+  top: 19%;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.dottedX1 {
+  position: absolute;
+  top: -7%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+
+.dottedX2 {
+  position: absolute;
+  top: -12.5%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+
+.dotY1 {
+  position: absolute;
+  top: 78%;
+  left: 99%;
+  transform: translate(50%, -50%);
+}
+
+.dotY2 {
+  position: absolute;
+  top: 78%;
+  left: 104%;
+  transform: translate(50%, -50%);
+}
+
+.dotX1 {
+  position: absolute;
+  top: 99%;
+  left: 41%;
+  transform: translate(50%, 50%);
+}
+
+.dotX2 {
+  position: absolute;
+  top: 104.5%;
+  left: 41%;
+  transform: translate(50%, 50%);
+}
+
 .mapIcon {
   /* position: relative; */
   transition: fill 400ms ease-in-out 0s;
