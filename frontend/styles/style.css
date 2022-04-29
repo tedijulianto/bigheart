@@ -2,6 +2,10 @@
   padding: 8vh 0;
 }
 
+.sectionSpacingHero {
+  padding: 8vh 2rem;
+}
+
 .chartMissionBox {
   width: 380px;
   height: 380px;
@@ -80,6 +84,7 @@ i {
 }
 
 /* ============================ Section Base Color ============================ */
+#hero,
 #roadmap,
 #community,
 #charity,
@@ -118,9 +123,14 @@ i {
   transition: fill 400ms ease-in-out 0s;
 }
 
+.waveHero,
 .waveCommunity {
   fill: rgb(255, 255, 255);
   transition: fill 400ms ease-in-out 0s;
+}
+
+#hero svg {
+  transform: rotate(180deg);
 }
 
 /* .waveFooter1 {
@@ -140,6 +150,14 @@ i {
 
 /* ============================ Responsive Screen ============================ */
 @media screen and (max-width: 320px) {
+  .heroTitle {
+    grid-area: heroText;
+  }
+
+  .heroImg {
+    grid-area: heroPic;
+  }
+
   .card-img-overlay-left {
     left: 0;
     top: 350px;
@@ -150,14 +168,23 @@ i {
     text-align: center;
   }
 
-  #hero h5 {
+  #hero h1,
+  h4,
+  h5 {
     text-align: center;
+  }
+
+  #hero h5 {
     font-size: 1rem;
   }
 
-  #story {
-    margin-top: 340px;
+  #hero svg {
+    margin-top: -65px;
   }
+
+  /* #story {
+    margin-top: 340px;
+  } */
 
   #story p {
     font-size: 0.9rem;
@@ -301,6 +328,14 @@ i {
 }
 
 @media screen and (min-width: 321px) and (max-width: 399.98px) {
+  .heroTitle {
+    grid-area: heroText;
+  }
+
+  .heroImg {
+    grid-area: heroPic;
+  }
+
   .card-img-overlay-left {
     left: 0;
     top: 350px;
@@ -311,8 +346,18 @@ i {
     text-align: center;
   }
 
-  #hero h5 {
+  #hero h1,
+  h4,
+  h5 {
     text-align: center;
+  }
+
+  #hero h5 {
+    font-size: 1rem;
+  }
+
+  #hero svg {
+    margin-top: -65px;
   }
 
   #story {
@@ -448,6 +493,14 @@ i {
 }
 
 @media screen and (min-width: 400px) and (max-width: 575.98px) {
+  .heroTitle {
+    grid-area: heroText;
+  }
+
+  .heroImg {
+    grid-area: heroPic;
+  }
+
   .card-img-overlay-left {
     left: 0;
     top: 420px;
@@ -458,12 +511,22 @@ i {
     text-align: center;
   }
 
-  #hero h5 {
+  #hero h1,
+  h4,
+  h5 {
     text-align: center;
   }
 
+  #hero h5 {
+    font-size: 1rem;
+  }
+
+  #hero svg {
+    margin-top: -65px;
+  }
+
   #story {
-    margin-top: 322px;
+    margin-top: -70px;
   }
 
   #story h3 {
@@ -606,6 +669,14 @@ i {
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .heroTitle {
+    grid-area: heroText;
+  }
+
+  .heroImg {
+    grid-area: heroPic;
+  }
+
   .card-img-overlay-left {
     left: 2%;
     top: 175px;
@@ -615,10 +686,27 @@ i {
     font-size: 1.35rem !important;
   }
 
+  #hero h1,
+  h4 {
+    display: inline-block;
+  }
+
+  .heroTitle {
+    text-align: center;
+  }
+
   #hero h5 {
+    font-size: 1.15rem;
+  }
+
+  #hero svg {
+    margin-top: -65px;
+  }
+
+  /* #hero h5 {
     font-size: 0.8rem;
     margin-top: -5px;
-  }
+  } */
 
   #hero .line-height-30 {
     line-height: 23px !important;
@@ -747,6 +835,14 @@ i {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .heroTitle {
+    grid-area: heroText;
+  }
+
+  .heroImg {
+    grid-area: heroPic;
+  }
+
   .card-img-overlay-left {
     left: 2%;
     top: 220px;
@@ -756,8 +852,17 @@ i {
     font-size: 2rem !important;
   }
 
-  #hero h5 {
-    font-size: 1rem;
+  #hero h1,
+  h4 {
+    display: inline-block;
+  }
+
+  .heroTitle {
+    text-align: center;
+  }
+
+  #hero svg {
+    margin-top: -65px;
   }
 
   #story {
@@ -874,6 +979,26 @@ i {
     font-size: 56px !important;
   }
 
+  #hero svg {
+    margin-top: -160px;
+  }
+
+  #hero h4 {
+    font-size: 2.5rem;
+    margin-bottom: 0 !important;
+  }
+
+  #hero h5 {
+    font-size: 1rem;
+    line-height: 25px !important;
+    margin-top: 10px;
+  }
+
+  .heroTitle {
+    margin-top: 55px;
+    margin-left: 32px;
+  }
+
   #story img {
     height: 115px;
   }
@@ -947,6 +1072,28 @@ i {
 }
 
 @media screen and (min-width: 1200px) {
+  #hero svg {
+    margin-top: -160px;
+  }
+
+  #hero h1,
+  h4 {
+    font-size: 3rem;
+  }
+
+  #hero h4 {
+    margin-bottom: 0 !important;
+  }
+
+  #hero h5 {
+    margin-top: 10px;
+  }
+
+  .heroTitle {
+    margin-top: 60px;
+    margin-left: 112px;
+  }
+
   #story img {
     height: 115px;
   }
@@ -1011,6 +1158,11 @@ i {
     top: 38%;
     left: 92%;
   }
+
+  .heroTitle {
+    margin-top: 130px;
+    margin-left: 130px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1026,5 +1178,12 @@ i {
 
   .mapIcon {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .heroTitle {
+    margin-top: 180px;
+    margin-left: 160px;
   }
 }
