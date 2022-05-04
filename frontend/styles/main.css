@@ -135,17 +135,18 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
+  position: relative;
   font-weight: 500;
 }
 
-.navbar .navbar-nav .nav-link:hover {
+/* .navbar .navbar-nav .nav-link:hover {
   color: #ac1f40 !important;
-}
+} */
 
-.navbar .navbar-nav .active {
+/* .navbar .navbar-nav .active {
   font-weight: bold;
   color: #ac1f40 !important;
-}
+} */
 
 .navbar .navbar-nav .btn-pulse button {
   font-size: 14px !important;
