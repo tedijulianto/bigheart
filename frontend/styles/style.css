@@ -19,7 +19,7 @@
   box-shadow: 0px 0px 20px 1px rgba(172, 31, 64, 0.75);
 }
 
-/* ============================ Wave Styling ============================ */
+/* ============================ Navbar Styling ============================ */
 .navbar .navbar-nav .nav-link::before {
   content: "";
   position: absolute;
@@ -148,6 +148,10 @@
 }
 #navbar form button:hover span {
   animation-play-state: paused;
+}
+
+.collapsing {
+  transition: none;
 }
 
 /* ============================ Address Section ============================ */
@@ -1102,29 +1106,34 @@ i {
   }
 
   .card-img-overlay-minleft-20 {
-    left: -1%;
-    width: 66%;
+    left: 8%;
+    width: 60%;
     top: -165px;
     transform: translate(50%, -50%);
+    padding: 16px;
+    height: 320px;
   }
 
   #charity h1 {
-    margin-top: 25px;
-    margin-left: 8px;
     font-size: 2rem;
   }
 
   #charity p {
     font-size: 0.85rem;
-    padding: 10px;
+  }
+
+  .caveat {
+    margin-top: 32px;
   }
 
   .btn-charity {
-    margin-left: 10px;
+    margin-top: 16px;
   }
 
   .border-right-red20 {
     border-right: 16px solid #ac1f40;
+    position: absolute;
+    height: 300px;
   }
 
   .card-focus::before {
