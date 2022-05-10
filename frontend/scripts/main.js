@@ -1,21 +1,4 @@
-// $("#video").on("hide.bs.modal", function (event) {
-//     var myPlayer = videojs("my-video");
-//     myPlayer.pause();
-// });
-// $("#videoMobile").on("hide.bs.modal", function (event) {
-//     var myPlayer = videojs("my-video-mobile");
-//     myPlayer.pause();
-// });
-
-// function openNav() {
-//     document.getElementById("myNav").style.width = "100%";
-// }
-
-// /* Close when someone clicks on the "x" symbol inside the overlay */
-// function closeNav() {
-//     document.getElementById("myNav").style.width = "0%";
-// }
-
+/* ============================ Navbar  ============================ */
 const navbar = document.querySelector("#navbar");
 window.onscroll = function () {
   var top = window.scrollY;
@@ -33,6 +16,7 @@ $(document).ready(function () {
   });
 });
 
+/* ============================ Mission Chart  ============================ */
 const missionChart = new Chart(document.getElementById("chartMission"), {
   type: "doughnut",
   data: {
@@ -59,10 +43,82 @@ const missionChart = new Chart(document.getElementById("chartMission"), {
   },
 });
 
+// let box1 = document.querySelector(".box1");
+// let box2 = document.querySelector(".box2");
+
+// let bar1 = new ProgressBar.Circle(box1, {
+//     color: "#3a3a3a",
+
+//     // This has to be the same size as the maximum width to
+//     // prevent clipping
+//     strokeWidth: 5,
+//     trailWidth: 5,
+//     easing: "easeInOut",
+//     duration: 1400,
+//     text: {
+//         autoStyleContainer: false,
+//     },
+//     from: { color: "#AC1F40", width: 5 },
+//     to: { color: "#AC1F40", width: 5 },
+//     // Set default step function for all animate calls
+//     step: function (state, circle) {
+//         circle.path.setAttribute("stroke", state.color);
+//         circle.path.setAttribute("stroke-width", state.width);
+
+//         var value = Math.round(circle.value() * 100);
+//         if (value === 0) {
+//             circle.setText("");
+//         } else {
+//             circle.setText(value + "%");
+//         }
+//     },
+// });
+// bar1.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+// bar1.text.style.fontSize = "2rem";
+// bar1.text.style.color = "#AC1F40";
+
+// let bar2 = new ProgressBar.Circle(box2, {
+//     color: "#f4ced6",
+//     // This has to be the same size as the maximum width to
+//     // prevent clipping
+//     strokeWidth: 5,
+//     trailWidth: 5,
+//     easing: "easeInOut",
+//     duration: 1400,
+//     text: {
+//         autoStyleContainer: false,
+//     },
+//     from: { color: "#AC1F40", width: 5 },
+//     to: { color: "#AC1F40", width: 5 },
+//     // Set default step function for all animate calls
+//     step: function (state, circle) {
+//         circle.path.setAttribute("stroke", state.color);
+//         circle.path.setAttribute("stroke-width", state.width);
+
+//         var value = Math.round(circle.value() * 100);
+//         if (value === 0) {
+//             circle.setText("");
+//         } else {
+//             circle.setText(value + "%");
+//         }
+//     },
+// });
+// bar2.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+// bar2.text.style.fontSize = "2rem";
+// bar2.text.style.color = "#AC1F40";
+
+/* ============================ AOS  ============================ */
 AOS.init({
   once: true,
 });
 
+/* ============================ Community  ============================ */
+// VanillaTilt.init(document.querySelectorAll(".card-community"), {
+//     max: 25,
+//     speed: 400,
+// });
+
+/* ============================ Charity Chart  ============================ */
 const chart1 = new Chart(document.getElementById("chart1"), {
   type: "line",
   data: {
@@ -96,6 +152,7 @@ const chart1 = new Chart(document.getElementById("chart1"), {
         text: "source: Ministry of Cultural Education 2019/2020",
       },
     },
+    maintainAspectRatio: false,
   },
 });
 
@@ -135,7 +192,14 @@ const chart2 = new Chart(document.getElementById("chart2"), {
         text: "source: https://statistik.data.kemdikbud.go.id/",
       },
     },
+    maintainAspectRatio: false,
   },
+});
+
+/* ============================ Address  ============================ */
+$(".address-title").click(function () {
+  $(".located").removeClass("active");
+  $(this).parent().addClass("active");
 });
 
 // const loc = document.querySelectorAll(".located");

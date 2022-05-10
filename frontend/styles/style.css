@@ -395,6 +395,11 @@ i {
     margin-left: 10px;
   }
 
+  .chartStudent1,
+  .chartStudent2 {
+    min-height: 300px;
+  }
+
   .card-img-overlay-minleft-20 {
     position: inherit;
     left: 0;
@@ -402,7 +407,7 @@ i {
   }
 
   .border-right-red20 {
-    border-right: 15px solid #ac1f40;
+    border-right: 16px solid #ac1f40;
   }
 
   .card-focus::before {
@@ -575,12 +580,17 @@ i {
     margin-left: 10px;
   }
 
+  .chartStudent1,
+  .chartStudent2 {
+    min-height: 300px;
+  }
+
   .card-img-overlay-minleft-20 {
     left: 0;
   }
 
   .border-right-red20 {
-    border-right: 15px solid #ac1f40;
+    border-right: 16px solid #ac1f40;
   }
 
   #charity .card-focus::before {
@@ -770,12 +780,17 @@ i {
     margin-left: 10px;
   }
 
+  .chartStudent1,
+  .chartStudent2 {
+    min-height: 300px;
+  }
+
   .card-img-overlay-minleft-20 {
     left: 0;
   }
 
   .border-right-red20 {
-    border-right: 15px solid #ac1f40;
+    border-right: 16px solid #ac1f40;
   }
 
   #charity .card-focus::before {
