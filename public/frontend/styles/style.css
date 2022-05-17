@@ -1,0 +1,1398 @@
+.sectionSpacing {
+    padding: 8vh 0;
+}
+
+.sectionSpacingHero {
+    padding: 8vh 2rem;
+}
+
+.chartMissionBox {
+    width: 380px;
+    height: 380px;
+}
+
+.card-community {
+    border-radius: 10px;
+}
+
+.card-community:hover {
+    box-shadow: 0px 0px 20px 1px rgba(172, 31, 64, 0.75);
+}
+
+/* ============================ Navbar Styling ============================ */
+.navbar .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #ac1f40;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.navbar .navbar-nav .nav-link.active::before,
+.navbar .navbar-nav .nav-link:hover::before {
+    transform: scale(1);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #ac1f40 !important;
+}
+
+#navbar form .custom-btn {
+    background: linear-gradient(to left top, #facaca 50%, #f29191 50%);
+    border-style: none;
+    color: #000;
+    padding: 0.5rem !important;
+    margin-left: 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#navbar form button span {
+    position: absolute;
+    display: block;
+}
+#navbar form button span:nth-child(1) {
+    height: 3px;
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #ac1f40);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1 {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+#navbar form button span:nth-child(2) {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ac1f40);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2 {
+    0% {
+        top: -70px;
+    }
+    100% {
+        top: 70px;
+    }
+}
+#navbar form button span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #ac1f40);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3 {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 200px;
+    }
+}
+
+#navbar form button span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #ac1f40);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4 {
+    0% {
+        bottom: -70px;
+    }
+    100% {
+        bottom: 70px;
+    }
+}
+
+#navbar form button:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+#navbar form button:hover span {
+    animation-play-state: paused;
+}
+
+.collapsing {
+    transition: none;
+}
+
+/* ============================ Address Section ============================ */
+.card-glass {
+    box-shadow: 0px 0px 20px 1px rgba(40, 255, 240, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.location {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.located {
+    max-width: 700px;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.address-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-title h3 {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.address-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.address-details p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.located.active .address-details {
+    max-height: 300px;
+}
+
+.located.active i {
+    transform: rotate(180deg);
+}
+
+i {
+    transition: transform 0.5s ease-in;
+}
+
+/* ============================ Section Base Color ============================ */
+#hero,
+#roadmap,
+#community,
+#charity,
+#address {
+    background-color: rgb(248, 249, 251);
+}
+
+/* ============================ Wave Styling ============================ */
+.wave {
+    display: block;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.waveLine {
+    stroke: rgb(229, 233, 240);
+    fill: none;
+    transition: fill 400ms ease-in-out 0s;
+}
+
+.waveLineRed {
+    stroke: rgb(172, 31, 64);
+    fill: none;
+    transition: fill 400ms ease-in-out 0s;
+}
+
+.waveMission,
+.waveTrusted {
+    fill: rgb(248, 249, 251);
+    transition: fill 400ms ease-in-out 0s;
+}
+
+.waveHero,
+.waveCommunity {
+    fill: rgb(255, 255, 255);
+    transition: fill 400ms ease-in-out 0s;
+}
+
+#hero svg {
+    transform: rotate(180deg);
+}
+
+/* ============================ Responsive Screen ============================ */
+@media screen and (max-width: 320px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+        height: 100vh;
+    }
+
+    #navbar form .custom-btn {
+        margin: 0.5rem auto !important;
+    }
+
+    .heroTitle {
+        grid-area: heroText;
+    }
+
+    .heroImg {
+        grid-area: heroPic;
+        margin-top: 25px;
+    }
+
+    .card-img-overlay-left {
+        left: 0;
+        top: 350px;
+    }
+
+    .font-56 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    #hero h1,
+    h4,
+    h5 {
+        text-align: center;
+    }
+
+    #hero h5 {
+        font-size: 1rem;
+    }
+
+    #hero svg {
+        margin-top: -65px;
+    }
+
+    /* #story {
+    margin-top: 340px;
+  } */
+
+    #story p {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    #mission h1 {
+        font-size: 2rem;
+    }
+
+    #mission h5 {
+        font-size: 1.25rem;
+    }
+
+    #mission p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #mission h1,
+    h5 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .box1,
+    .box2 {
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+
+    /* #community {
+    margin-bottom: 20px;
+  } */
+
+    .chartMissionBox {
+        height: 260px;
+    }
+
+    #trusted .card-img-custom {
+        height: 500px;
+    }
+
+    .handShake {
+        display: none;
+    }
+
+    .giftCoin {
+        display: none;
+    }
+
+    #charity h1 {
+        margin-top: 25px;
+        margin-left: 8px;
+        font-size: 2.25rem;
+    }
+
+    #charity p {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .btn-charity {
+        margin-left: 10px;
+    }
+
+    .chartStudent1,
+    .chartStudent2 {
+        min-height: 300px;
+    }
+
+    .card-img-overlay-minleft-20 {
+        position: inherit;
+        left: 0;
+        top: 200px;
+    }
+
+    .border-right-red20 {
+        border-right: 16px solid #ac1f40;
+    }
+
+    .card-focus::before {
+        width: 100%;
+    }
+
+    .card-focus::after {
+        width: 30%;
+        position: absolute;
+    }
+
+    .charityDonation {
+        display: none;
+    }
+
+    .address-title h3 {
+        font-size: 1rem;
+    }
+
+    .address-details p {
+        font-size: 0.8rem;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+
+    .dottedY1 {
+        display: none;
+    }
+
+    .dottedY2 {
+        display: none;
+    }
+
+    .dottedX1 {
+        display: none;
+    }
+
+    .dottedX2 {
+        display: none;
+    }
+
+    .dotY1 {
+        display: none;
+    }
+
+    .dotY2 {
+        display: none;
+    }
+
+    .dotX1 {
+        display: none;
+    }
+
+    .dotX2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 399.98px) {
+    .navbar .navbar-nav {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    #navbar form .custom-btn {
+        margin: 2rem auto 0 !important;
+    }
+
+    .heroTitle {
+        grid-area: heroText;
+    }
+
+    .heroImg {
+        grid-area: heroPic;
+    }
+
+    .card-img-overlay-left {
+        left: 0;
+        top: 350px;
+    }
+
+    .font-56 {
+        font-size: 40px !important;
+        text-align: center;
+    }
+
+    #hero h1,
+    h4,
+    h5 {
+        text-align: center;
+    }
+
+    #hero h5 {
+        font-size: 1rem;
+    }
+
+    #hero svg {
+        margin-top: -65px;
+    }
+
+    #story {
+        margin-top: -70px;
+    }
+
+    /* #story h1,
+  h3 {
+    text-align: center;
+  } */
+
+    #mission h1,
+    h5 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #mission p {
+        text-align: center;
+    }
+
+    .chartMissionBox {
+        height: 320px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .box1,
+    .box2 {
+        width: 70%;
+        height: auto;
+        position: relative;
+    }
+
+    #trusted .card-img-custom {
+        height: 500px;
+    }
+
+    .handShake {
+        display: none;
+    }
+
+    .giftCoin {
+        display: none;
+    }
+
+    #charity h1 {
+        margin-top: 25px;
+        margin-left: 8px;
+        font-size: 2.25rem;
+    }
+
+    #charity p {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .btn-charity {
+        margin-left: 10px;
+    }
+
+    .card-img-overlay-minleft-20 {
+        position: inherit;
+        left: 0;
+    }
+
+    .border-right-red20 {
+        border-right: 16px solid #ac1f40;
+    }
+
+    .card-focus::before {
+        width: 100%;
+    }
+
+    .card-focus::after {
+        width: 40%;
+        position: absolute;
+    }
+
+    .charityDonation {
+        width: 60px;
+        top: 21px;
+        left: 81%;
+    }
+
+    .chartStudent1,
+    .chartStudent2 {
+        min-height: 300px;
+    }
+
+    .address-title h3 {
+        font-size: 1rem;
+    }
+
+    .address-details p {
+        font-size: 0.8rem;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+
+    .dottedY1 {
+        display: none;
+    }
+
+    .dottedY2 {
+        display: none;
+    }
+
+    .dottedX1 {
+        display: none;
+    }
+
+    .dottedX2 {
+        display: none;
+    }
+
+    .dotY1 {
+        display: none;
+    }
+
+    .dotY2 {
+        display: none;
+    }
+
+    .dotX1 {
+        display: none;
+    }
+
+    .dotX2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 575.98px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+        height: 100vh;
+    }
+
+    #navbar form .custom-btn {
+        margin: 0.5rem auto !important;
+    }
+
+    .heroTitle {
+        grid-area: heroText;
+    }
+
+    .heroImg {
+        grid-area: heroPic;
+    }
+
+    .card-img-overlay-left {
+        left: 0;
+        top: 420px;
+    }
+
+    .font-56 {
+        font-size: 2.5rem !important;
+        text-align: center;
+    }
+
+    #hero h1,
+    h4,
+    h5 {
+        text-align: center;
+    }
+
+    #hero h5 {
+        font-size: 1rem;
+    }
+
+    #hero svg {
+        margin-top: -65px;
+    }
+
+    #story {
+        margin-top: -70px;
+    }
+
+    #story h3 {
+        font-size: 2.25rem;
+    }
+
+    #story p {
+        font-size: 1rem;
+    }
+
+    /* #story h1,
+  h3 {
+    text-align: center;
+  } */
+
+    #story img {
+        height: 115px;
+    }
+
+    #mission h5 {
+        font-size: 1.5rem;
+    }
+
+    #mission p {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    #mission h1,
+    h5 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box1,
+    .box2 {
+        width: 70%;
+        height: auto;
+        position: relative;
+    }
+
+    .card-mission {
+        width: 265px;
+    }
+
+    #trusted .card-img-custom {
+        height: 500px;
+    }
+
+    .handShake {
+        display: none;
+    }
+
+    .giftCoin {
+        display: none;
+    }
+
+    #charity h1 {
+        margin-top: 25px;
+        margin-left: 8px;
+    }
+
+    #charity p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn-charity {
+        margin-left: 10px;
+    }
+
+    .card-img-overlay-minleft-20 {
+        position: inherit;
+        left: 0;
+    }
+
+    .border-right-red20 {
+        border-right: 16px solid #ac1f40;
+    }
+
+    #charity .card-focus::before {
+        width: 100%;
+    }
+
+    #charity .card-focus::after {
+        width: 50%;
+        position: absolute;
+    }
+
+    .charityDonation {
+        width: 70px;
+        top: 15px;
+        left: 84%;
+    }
+
+    .chartStudent1,
+    .chartStudent2 {
+        min-height: 300px;
+    }
+
+    .chartMissionBox {
+        height: 375px;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+
+    .dottedY1 {
+        display: none;
+    }
+
+    .dottedY2 {
+        display: none;
+    }
+
+    .dottedX1 {
+        display: none;
+    }
+
+    .dottedX2 {
+        display: none;
+    }
+
+    .dotY1 {
+        display: none;
+    }
+
+    .dotY2 {
+        display: none;
+    }
+
+    .dotX1 {
+        display: none;
+    }
+
+    .dotX2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+        height: 100vh;
+    }
+
+    #navbar form .custom-btn {
+        margin: 0.5rem auto !important;
+    }
+
+    .heroTitle {
+        grid-area: heroText;
+    }
+
+    .heroImg {
+        grid-area: heroPic;
+    }
+
+    .card-img-overlay-left {
+        left: 2%;
+        top: 175px;
+    }
+
+    .font-56 {
+        font-size: 1.35rem !important;
+    }
+
+    #hero h1,
+    h4 {
+        display: inline-block;
+    }
+
+    .heroTitle {
+        text-align: center;
+    }
+
+    #hero h5 {
+        font-size: 1.15rem;
+    }
+
+    #hero svg {
+        margin-top: -65px;
+    }
+
+    /* #hero h5 {
+    font-size: 0.8rem;
+    margin-top: -5px;
+  } */
+
+    #hero .line-height-30 {
+        line-height: 23px !important;
+    }
+
+    #story {
+        margin-top: -70px;
+    }
+
+    #story p {
+        font-size: 0.85rem;
+    }
+
+    #story img {
+        height: 115px;
+    }
+
+    .card-mission {
+        width: 222px;
+    }
+
+    .box1,
+    .box2 {
+        width: 140px;
+        height: 130px;
+        position: relative;
+    }
+
+    .progressbar-text {
+        top: 55% !important;
+        font-size: 1.75rem !important;
+    }
+
+    #trusted .card-img-custom {
+        width: auto;
+        height: 480px;
+    }
+
+    .handShake {
+        display: none;
+    }
+
+    .giftCoin {
+        display: none;
+    }
+
+    #charity .img-modal {
+        width: 75%;
+        height: 330px;
+    }
+
+    #charity .card-img-overlay-minleft-20 {
+        left: 0;
+        top: 160px;
+        position: inherit;
+    }
+
+    #charity h1 {
+        margin-top: 25px;
+        margin-left: 8px;
+    }
+
+    #charity p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn-charity {
+        margin-left: 10px;
+    }
+
+    .border-right-red20 {
+        border-right: 16px solid #ac1f40;
+    }
+
+    .card-focus::before {
+        content: "";
+        width: 50%;
+    }
+
+    .card-focus::after {
+        width: 50%;
+    }
+
+    .charityDonation {
+        width: 80px;
+        top: 0;
+        left: 89%;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+
+    .dottedY1 {
+        display: none;
+    }
+
+    .dottedY2 {
+        display: none;
+    }
+
+    .dottedX1 {
+        display: none;
+    }
+
+    .dottedX2 {
+        display: none;
+    }
+
+    .dotY1 {
+        display: none;
+    }
+
+    .dotY2 {
+        display: none;
+    }
+
+    .dotX1 {
+        display: none;
+    }
+
+    .dotX2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .heroTitle {
+        grid-area: heroText;
+    }
+
+    .heroImg {
+        grid-area: heroPic;
+    }
+
+    .card-img-overlay-left {
+        left: 2%;
+        top: 220px;
+    }
+
+    .font-56 {
+        font-size: 2rem !important;
+    }
+
+    #hero h1,
+    h4 {
+        display: inline-block;
+    }
+
+    .heroTitle {
+        text-align: center;
+    }
+
+    #hero svg {
+        margin-top: -65px;
+    }
+
+    #story {
+        margin-top: -70px;
+    }
+
+    #story p {
+        font-size: 15px;
+    }
+
+    #story img {
+        height: 115px;
+    }
+
+    .img-mission {
+        width: 300px;
+        height: 300px;
+    }
+
+    .box {
+        gap: 20px;
+    }
+
+    .card-mission {
+        width: 222px;
+    }
+
+    .box1,
+    .box2 {
+        width: 140px;
+        height: 130px;
+        position: relative;
+    }
+
+    .progressbar-text {
+        top: 55% !important;
+        font-size: 1.75rem !important;
+    }
+
+    #trusted .card-img-custom {
+        width: auto;
+        height: 400px;
+    }
+
+    .handShake {
+        width: 120px;
+        top: 0px;
+        left: 20%;
+    }
+
+    .giftCoin {
+        width: 85px;
+        top: 3%;
+        left: 90%;
+    }
+
+    .img-modal {
+        width: 55%;
+        height: 330px;
+    }
+
+    .card-img-overlay-minleft-20 {
+        left: 8%;
+        width: 60%;
+        top: -165px;
+        transform: translate(50%, -50%);
+        padding: 16px;
+        height: 320px;
+    }
+
+    #charity h1 {
+        font-size: 2rem;
+    }
+
+    #charity p {
+        font-size: 0.85rem;
+    }
+
+    .caveat {
+        margin-top: 32px;
+    }
+
+    .btn-charity {
+        margin-top: 16px;
+    }
+
+    .border-right-red20 {
+        border-right: 16px solid #ac1f40;
+        position: absolute;
+        height: 300px;
+    }
+
+    .card-focus::before {
+        width: 50%;
+    }
+
+    .card-focus::after {
+        width: 50%;
+    }
+
+    .charityDonation {
+        width: 80px;
+        top: 15px;
+        left: 91%;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .card-img-overlay-left {
+        left: 10%;
+        top: 58%;
+    }
+
+    .font-56 {
+        font-size: 56px !important;
+    }
+
+    #hero svg {
+        margin-top: -160px;
+    }
+
+    #hero h4 {
+        font-size: 2.5rem;
+        margin-bottom: 0 !important;
+    }
+
+    #hero h5 {
+        font-size: 1rem;
+        line-height: 25px !important;
+        margin-top: 10px;
+    }
+
+    .heroTitle {
+        margin-top: 55px;
+        margin-left: 32px;
+    }
+
+    #story img {
+        height: 115px;
+    }
+
+    .box {
+        gap: 20px;
+    }
+
+    .card-mission {
+        width: 240px;
+    }
+
+    .box1,
+    .box2 {
+        width: 140px;
+        height: 130px;
+        position: relative;
+    }
+
+    .progressbar-text {
+        top: 55% !important;
+        font-size: 1.75rem !important;
+    }
+
+    .card-img-custom {
+        width: auto;
+        height: 400px;
+    }
+
+    .handShake {
+        width: 120px;
+        top: -16px;
+        left: 20%;
+    }
+
+    .giftCoin {
+        width: 85px;
+        top: 5px;
+        left: 92%;
+    }
+
+    #charity h1 {
+        margin: 10px 0;
+    }
+
+    .img-modal {
+        height: 400px;
+    }
+
+    .card-img-overlay-minleft-20 {
+        left: -40%;
+    }
+
+    .card-focus::before {
+        width: 50%;
+    }
+
+    .card-focus::after {
+        width: 50%;
+    }
+
+    .charityDonation {
+        width: 90px;
+        top: -10px;
+        left: 85%;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #hero svg {
+        margin-top: -160px;
+    }
+
+    #hero h1,
+    h4 {
+        font-size: 3rem;
+    }
+
+    #hero h4 {
+        margin-bottom: 0 !important;
+    }
+
+    #hero h5 {
+        margin-top: 10px;
+    }
+
+    .heroTitle {
+        margin-top: 60px;
+        margin-left: 112px;
+    }
+
+    #story img {
+        height: 115px;
+    }
+
+    .box {
+        gap: 20px;
+    }
+
+    .box1,
+    .box2 {
+        width: 180px;
+        height: 180px;
+        font-size: 0.5rem;
+        position: relative;
+    }
+
+    .giftCoin {
+        width: 100px;
+        top: 0;
+        left: 92%;
+    }
+
+    #charity h1 {
+        font-size: 2.25rem;
+    }
+
+    #charity p {
+        font-size: 1.25rem;
+    }
+
+    .img-modal {
+        width: 100%;
+        height: 420px;
+    }
+
+    .btn-charity {
+        height: 60px;
+        width: 250px;
+    }
+
+    .card-img-overlay-minleft-20 {
+        position: absolute;
+        left: -50%;
+    }
+
+    .card-focus::before {
+        width: 35%;
+    }
+
+    .card-focus::after {
+        width: 35%;
+    }
+
+    .mapIcon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .giftCoin {
+        width: 100px;
+        top: 38%;
+        left: 92%;
+    }
+
+    .heroTitle {
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .giftCoin {
+        width: 110px;
+        top: 35%;
+        left: 91%;
+    }
+
+    #address h1 {
+        font-size: 2.2rem;
+    }
+
+    .mapIcon {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .heroTitle {
+        margin-top: 180px;
+        margin-left: 160px;
+    }
+}
