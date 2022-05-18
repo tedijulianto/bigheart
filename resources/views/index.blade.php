@@ -1,9 +1,6 @@
 @extends('layouts.bighearts')
 
 @section('content')
-<!-- Navbar  -->
-@include('partials.navbar')
-
 <!-- Hero  -->
 <section id="hero">
   <!-- <div class="card border-0 rounded-0 position-relative">
@@ -36,10 +33,13 @@
       </div>
     </div>
   </div>
-  <svg viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="waveHero">
+  {{-- <svg viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="waveHero">
     <path
       d="M 0,400 C 0,400 0,200 0,200 C 49.39340942562593,238.71539027982328 98.78681885125187,277.43078055964656 167,259 C 235.21318114874813,240.56921944035346 322.2461340206185,164.99226804123708 388,164 C 453.7538659793815,163.00773195876292 498.2286450662739,236.60014727540505 543,273 C 587.7713549337261,309.39985272459495 632.8392857142858,308.60714285714283 700,262 C 767.1607142857142,215.39285714285717 856.4142120765832,122.97128129602356 918,125 C 979.5857879234168,127.02871870397644 1013.5038659793813,223.5077319587629 1072,239 C 1130.4961340206187,254.4922680412371 1213.5703240058908,188.9977908689249 1279,169 C 1344.4296759941092,149.0022091310751 1392.2148379970545,174.50110456553756 1440,200 C 1440,200 1440,400 1440,400 Z"
       transform="rotate(-180 720 200)"></path>
+  </svg> --}}
+  <svg viewBox="0 0 1440 70" version="1.1" xmlns="http://www.w3.org/2000/svg" class="waveHero wave">
+    <path d="M0 70 C 450,10 900,0 1440,70 V0 H0"></path>
   </svg>
 </section>
 
@@ -49,12 +49,14 @@
     <div class="row justify-content-center m-0">
       <div class="col-lg-10">
         <div class="row justify-content-center m-0">
-          <div class="col-lg-3 mb-lg-0 my-5 align-self-center text-center">
+          <div class="col-lg-3 mb-lg-0 my-5 align-self-center text-center" data-aos="fade-right"
+            data-aos-duration="1500">
             <h1 class="mb-4">Our <span class="red">Story</span></h1>
             <h3 class="caveat mb-0 red text-underline">When you have a big hearts?</h3>
           </div>
 
-          <div class="col-lg-9 align-self-center d-lg-flex d-md-flex d-sm-flex my-xl-5 my-lg-5">
+          <div class="col-lg-9 align-self-center d-lg-flex d-md-flex d-sm-flex my-xl-5 my-lg-5" data-aos="fade-left"
+            data-aos-duration="1500">
             <div class="flex-wrap flex-lg-nowrap mb-lg-3">
               <div class="card bg-transparent border-0 mx-2">
                 <img src="{{ asset('frontend/images/bg-badge.png') }}" class="card-img border-radius-20"
@@ -666,6 +668,4 @@
     </div>
   </div>
 </section>
-
-@include('partials.footer')
 @endsection

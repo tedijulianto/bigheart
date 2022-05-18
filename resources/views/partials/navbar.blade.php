@@ -11,10 +11,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-md-auto">
-            <a class="nav-link mx-lg-2" href="#hero">Home</a>
-            <a class="nav-link mx-lg-2" href="#story">NFT</a>
-            <a class="nav-link mx-lg-2" href="#roadmap">Roadmap</a>
-            <a class="nav-link mx-lg-2" href="#community">Team</a>
+            <a class="nav-link mx-3" href="#hero">Home</a>
+            <a class="nav-link mx-3" href="#story">NFT</a>
+            <a class="nav-link mx-3" href="#roadmap">Roadmap</a>
+            <a class="nav-link mx-3" href="#community">Team</a>
           </div>
           <form class="form-inline my-2 my-lg-0 position-relative">
             <button class="btn custom-btn my-2 my-sm-0" type="submit">

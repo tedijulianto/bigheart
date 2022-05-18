@@ -2,7 +2,7 @@
 const navbar = document.querySelector("#navbar");
 window.onscroll = function () {
     var top = window.scrollY;
-    if (top > 50) {
+    if (top > 0) {
         navbar.classList.add("muncul");
     } else {
         navbar.classList.remove("muncul");
